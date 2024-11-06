@@ -11,14 +11,17 @@
 <body>
     
 <header>
-    <h1>Brilho & <br>Glamour</h1>
+    <a href="pagprincipal.php"><h1>Brilho & <br>Glamour</h1></a>
         
-    <nav>
-        <a href="" class="aheader">SOBRE NÓS</a>
-        <a href="" class="aheader">RECOMENDAÇÕES PARA SUA PELE</a>
-        <a href="" class="aheader">LOGIN</a>
-    </nav>
-
+    <div class="nav">
+        <a href=""><button><p>RECOMENDAÇÕES</button></p></a>
+        <a href="pagsobrenos.php"><button><p>SOBRE NÓS</button></p></a>
+        <a href="paglogin.php"><button><p>LOGIN</p></button></a>
+    </div>
 </header>
+
+<main>
+    amd
+</main>
 
 </body>
