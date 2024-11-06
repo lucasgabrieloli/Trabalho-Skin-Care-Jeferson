@@ -1,0 +1,39 @@
+Create database sistemaBeG;
+
+Use sistemaBeG;
+
+create table cep(
+	numCEP char(8) primary key not null,
+    rua_cep varchar(150) not null,
+    cidade_cep varchar(150) not null,
+    estado_cep varchar(50) not null
+);
+
+create table cliente(
+	idCliente int primary key not null auto_increment,
+	constraint fk_numCEP foreign key (numCEP) references CEP (numCEP),
+	nome_cliente varchar(150) not null,
+	cpf_cli char(11) not null unique,
+	tel_cliente varchar(12) not null,
+	email_cliente varchar(150) not null,
+	idade_cliente smallint not null,
+	servico_cliente int not null, /*CORRIGIR*/
+	HrAgend_cliente datetime not null,
+	nmrEnd_cliente int not null,
+	complemento_cliente varchar(50)  
+);
+
+create table funcionarios(
+	idFunc int primary key not null auto_increment,
+	constraint fk_numCEP foreign key (numCEP) references CEP (numCEP),
+	nome_func varchar(200) not null,
+	cpf_func char(11) not null unique,
+	rg_func char(9) not null,
+	cargo_func varchar(200), /*CORRIGIR*/
+	nmrEnd_func int not null,
+	complemento_func varchar(50)
+);
+ 
+create table servicos(
+	idServico int primary key
+)
