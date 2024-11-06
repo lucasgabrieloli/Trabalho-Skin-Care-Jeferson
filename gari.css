@@ -1,0 +1,199 @@
+*{
+    margin:0% ;
+    padding: 0%;
+    font-family:'Trebuchet MS';
+    font-weight: 200;
+}
+h1:hover{
+    color: rgb(255, 0, 0);
+    transition: 0.50s;
+}
+.aheader{
+    color: #000000;
+    align-items: center;
+    display: inline-flex;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 40px;
+}
+
+body{
+    background-image: url(imagens/fundin\ vermei.png);
+    background-size: 100%;
+}
+main{
+    background-color: rgb(0, 0, 0, 0.9);
+    border-radius: 17px;
+    margin: 70px;
+    padding-bottom: 15px;
+}
+h1{
+    font-size: 53px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: minhafonte ;
+    margin-top: 6px;
+}
+
+img{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid #000000;
+} 
+
+a button{
+    font-size: 20px;
+    display: inline;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: rgb(151, 50, 50);
+    transform: scale(1.04);;
+    transition: 0.20s;
+}
+
+header{
+    background-color: rgb(99, 99, 99);
+    border-bottom: 4px solid rgb(112, 27, 27);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+nav{ 
+    text-align: right;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+a:hover {
+    transform: scale(1.09);
+    transition: 0.20s;
+}
+
+h2{
+    text-align: center;
+    color: rgb(170, 19, 19);
+    font-size: 47px;
+    font-family: 'Trebuchet MS';
+    padding-top: 45px;
+    font-weight: 600;
+    margin: 14px;
+}
+
+p{
+    color: #ffff;
+    margin: 50px;
+    font-size: 18px;
+    text-indent: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+
+figcaption{
+    color: #ffff;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+#trailer{
+    margin-top: 14px;
+}
+
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
+}
+
+.elenco{
+    color: #ffffff;
+    font-size: 25px;
+    text-decoration: none;
+    margin-top: 50px;
+
+}
+
+#ap2{
+    font-size: 53px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: minhafonte ;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+.h3elenco{
+    text-align: center;
+    margin-top: 50px;
+}
+
+h3:hover{ 
+    transform: scale(1.09);
+    transition: 0.20s;
+}
+
+#ap3{
+    font-size: 53px;
+    display: inline-flex;
+    color: rgb(0, 0, 0);
+    font-weight: 550;
+    font-family: minhafonte ;
+    margin-top: 6px;
+    text-decoration: none;
+}
+
+h4{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 35px;
+}
+
+h5{
+    font-size: 28px;
+    color: rgb(233, 79, 79);
+    margin-top: 6px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.fotoscuriosidades{
+    border: 1px solid rgb(141, 141, 141); 
+    width: 35%;
+}
+
+.fotoscuriosidades2{
+    border: 1px solid red; 
+    width: 35%;
+}
+
+address{
+    font-size: 18px;
+}
