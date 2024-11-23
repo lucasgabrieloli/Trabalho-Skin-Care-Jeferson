@@ -1,0 +1,5 @@
+C:\Users\luizf\source\repos\controleestoque\controledeestoque\obj\Debug\net5.0\controledeestoque.csproj.AssemblyReference.cache
+C:\Users\luizf\source\repos\controleestoque\controledeestoque\obj\Debug\net5.0\controledeestoque.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luizf\source\repos\controleestoque\controledeestoque\obj\Debug\net5.0\controledeestoque.AssemblyInfoInputs.cache
+C:\Users\luizf\source\repos\controleestoque\controledeestoque\obj\Debug\net5.0\controledeestoque.AssemblyInfo.cs
+C:\Users\luizf\source\repos\controleestoque\controledeestoque\obj\Debug\net5.0\controledeestoque.csproj.CoreCompileInputs.cache
