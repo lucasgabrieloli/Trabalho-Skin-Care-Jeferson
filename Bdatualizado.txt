@@ -1,0 +1,63 @@
+Create database sistemaBeG;
+
+Use sistemaBeG;
+
+create table cep(
+	numCEP char(8) primary key not null,
+    rua_cep varchar(150) not null,
+    cidade_cep varchar(150) not null,
+    estado_cep varchar(50) not null
+);
+
+create table funcionario (
+    idFunc int primary key not null auto_increment,
+    numCEP char(8),
+    constraint fk_numCEP foreign key (numCEP) references cep (numCEP),
+    nome_func varchar(200) not null,
+    cpf_func char(11) not null unique,
+    rg_func char(9) not null,
+    nmrEnd_func int not null,
+    complemento_func varchar(50)
+);
+ 
+create table servicos(
+	idServico int primary key auto_increment not null,
+    idFunc int,
+	constraint fk_idFunc foreign key (idFunc) references funcionario (idFunc),
+	tipo_servico varchar (200) not null,
+	val_servico decimal(10,2) not null
+);
+
+create table produto (
+    idProduto int primary key not null auto_increment,
+    codigoEAN char(13) not null unique,
+    val_prod decimal(10,2) not null,
+    descricao_prod varchar(255) not null,
+    estoque_prod int not null
+);
+
+create table cliente (
+    idCliente int primary key not null auto_increment,
+    numCEP char(8),             
+    idServico int,            
+    idProduto int,              
+    nome_cliente varchar(150) not null,
+    cpf_cli char(11) not null unique,
+    tel_cliente varchar(12) not null,
+    email_cliente varchar(150) not null,
+    idade_cliente smallint not null,
+    HrAgend_cliente datetime not null,
+    nmrEnd_cliente int not null,
+    complemento_cliente varchar(50),
+    constraint fk_numCEP_cli foreign key (numCEP) references cep (numCEP),
+    constraint fk_idServico_cli foreign key (idServico) references servicos (idServico),
+    constraint fk_idProduto_cli foreign key (idProduto) references produto (idProduto)
+);
+
+create table usuarios ( idUsuario int primary key not null auto_increment, 
+nome varchar(100) not null, 
+email varchar(150) not null unique, 
+senha varchar(255) not null );
+
+
+ALTER TABLE produto ADD COLUMN nome_prod VARCHAR(255) NOT NULL AFTER idProduto;
